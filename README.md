@@ -44,11 +44,6 @@ contract MyContract {
     }
 }
 
-     
-
-
-
-
 
 4.Click the "Compile" button after selecting the "Solidity Compiler" tab in the Remix IDE to begin compiling the smart contract.
 
