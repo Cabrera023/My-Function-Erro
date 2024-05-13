@@ -19,9 +19,11 @@ To interact with the smart contract, you'll need:
 
 
 // SPDX-License-Identifier: MIT
+
 pragma solidity >=0.6.12 <0.9.0;
 
 contract MyContract {
+
     uint256 public value;
     address public owner;
 
