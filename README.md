@@ -15,14 +15,12 @@ To interact with the smart contract, you'll need:
 
 3.Copy the content of MyContract.sol from this repository and paste it into the newly created file.
 
+# // SPDX-License-Identifier: MIT
+pragma solidity >=0.6.12 <0.9.0;
 
-
-   // SPDX-License-Identifier: MIT
-   pragma solidity >=0.6.12 <0.9.0;
-
-   contract MyContract {
-       uint256 public value;
-       address public owner;
+contract MyContract {
+    uint256 public value;
+    address public owner;
 
     constructor() {
       owner = msg.sender;
@@ -42,7 +40,6 @@ To interact with the smart contract, you'll need:
       value = _newValue;
     }
 }
-
 
 4.Click the "Compile" button after selecting the "Solidity Compiler" tab in the Remix IDE to begin compiling the smart contract.
 
