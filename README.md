@@ -12,36 +12,19 @@ To interact with the smart contract, you'll need:
 
 1.Launch your internet browser and go to  Remix IDE.
 
-2.In Remix IDE, create a new file and give it a name. MyContract.sol
+2.Create a new file in Remix IDE and name it MyContract.sol
 
-3.Duplicate the text of MyContract.sol from this repository and paste it into the newly created file.
+3.Copy the content of MyContract.sol from this repository and paste it into the newly created file.
 
-// SPDX-License-Identifier: MIT
-pragma solidity >=0.6.12 <0.9.0;
-contract MyContract {
-    uint256 public value;
-    address public owner;
+//SPLDX - License - Identifier: MIT
+pragma solidity > = 0.6.12 < 0.9.0;
 
-    constructor() {
-      owner = msg.sender;
+contract MyContarct {
+  uint256 public value;
+  address public owner;
 
-    }
-    
-    function setValue(uint256 _newValue) public {
-
-      require(msg.sender == owner, "Only the owner can set the value");
-
-      assert(_newValue != 0);
-
-      if(_newValue < value) {
-          revert("New value must be greater than or equel to current value");
-      }
-      
-      value = _newValue;
-    }
-}
-
-
+  constructor() {
+     
 
 
 
