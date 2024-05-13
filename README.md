@@ -10,18 +10,19 @@ To interact with the smart contract, you'll need:
 * An internet connection
 # Running in Remix IDE
 1.Launch your internet browser and go to  Remix IDE.
+
 2.Create a new file in Remix IDE and name it MyContract.sol
+
 3.Copy the content of MyContract.sol from this repository and paste it into the newly created file.
 
 
 
-// SPDX-License-Identifier: MIT
-pragma solidity >=0.6.12 <0.9.0;
+   // SPDX-License-Identifier: MIT
+   pragma solidity >=0.6.12 <0.9.0;
 
-contract MyContract {
-
-    uint256 public value;
-    address public owner;
+   contract MyContract {
+       uint256 public value;
+       address public owner;
 
     constructor() {
       owner = msg.sender;
@@ -44,7 +45,11 @@ contract MyContract {
 
 
 4.Click the "Compile" button after selecting the "Solidity Compiler" tab in the Remix IDE to begin compiling the smart contract.
+
 5.Go to the "Deploy & Run Transactions" page after the contract has properly compiled.
+
 6.Make sure the right environment (e.g., JavaScript VM, Injected Web3, etc.) is selected.
+
 7.Click the "Deploy" button to make the contract operational.
+
 8.The deployed contract can now be interacted with through the Remix IDE's provided user interface.
