@@ -16,10 +16,8 @@ To interact with the smart contract, you'll need:
 
 3.Duplicate the text of MyContract.sol from this repository and paste it into the newly created file.
 
-
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.6.12 <0.9.0;
-
 contract MyContract {
     uint256 public value;
     address public owner;
